@@ -229,6 +229,7 @@ p {
   border-top-color: var(--blue-300);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 1.5rem;
+  width: 100%;
 }
 .card__title h3 {
   font-size: 1.25rem;
