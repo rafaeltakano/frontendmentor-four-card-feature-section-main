@@ -162,6 +162,11 @@ p {
   line-height: 1.5;
 }
 
+._app {
+  margin-inline: auto;
+  max-width: 90rem;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color: var(--gray-100);
