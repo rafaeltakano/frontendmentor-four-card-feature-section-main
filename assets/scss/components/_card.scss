@@ -1,5 +1,4 @@
 .card {
-  background-color: var(--light-100);
   border: 5px solid transparent;
   border-radius: 0.5rem;
   border-top-color: var(--blue-300);
@@ -39,5 +38,13 @@
 
   &--blue {
     border-top-color: var(--blue-200);
+  }
+
+  @media (prefers-color-scheme: light) {
+    background-color: var(--light-100);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    background-color: var(--dark-100);
   }
 }

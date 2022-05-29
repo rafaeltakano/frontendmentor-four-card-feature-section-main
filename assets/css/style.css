@@ -137,6 +137,7 @@ table {
   --blue-300: hsl(234, 12%, 34%);
   --gray-100: hsl(0, 0%, 98%);
   --light-100: hsl(0, 0%, 100%);
+  --dark-100: hsl(0, 0%, 23%);
 }
 
 html {
@@ -167,13 +168,26 @@ p {
   max-width: 90rem;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   body {
     background-color: var(--gray-100);
   }
 
   :where(h1, h2, h3, h4, h5, h6) {
     color: var(--blue-300);
+  }
+
+  p {
+    color: var(--blue-100);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #121212;
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    color: #f2f2f2;
   }
 
   p {
@@ -228,7 +242,6 @@ p {
 }
 
 .card {
-  background-color: var(--light-100);
   border: 5px solid transparent;
   border-radius: 0.5rem;
   border-top-color: var(--blue-300);
@@ -259,6 +272,16 @@ p {
 }
 .card--blue {
   border-top-color: var(--blue-200);
+}
+@media (prefers-color-scheme: light) {
+  .card {
+    background-color: var(--light-100);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: var(--dark-100);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
