@@ -7,6 +7,7 @@
   --blue-300: hsl(234, 12%, 34%);
   --gray-100: hsl(0, 0%, 98%);
   --light-100: hsl(0, 0%, 100%);
+  --light-200: hsl(0, 0%, 95%);
   --dark-100: hsl(0, 0%, 23%);
 }
 
@@ -43,12 +44,20 @@ p {
     background-color: var(--gray-100);
   }
 
+  footer {
+    color: var(--blue-100);
+  }
+
   :where(h1, h2, h3, h4, h5, h6) {
     color: var(--blue-300);
   }
 
   p {
     color: var(--blue-100);
+  }
+
+  a {
+    color: var(--blue-300);
   }
 }
 
@@ -57,11 +66,19 @@ p {
     background-color: #121212;
   }
 
+  footer {
+    color: var(--blue-100);
+  }
+
   :where(h1, h2, h3, h4, h5, h6) {
-    color: #f2f2f2;
+    color: var(--light-200);
   }
 
   p {
     color: var(--blue-100);
+  }
+
+  a {
+    color: var(--light-200);
   }
 }
