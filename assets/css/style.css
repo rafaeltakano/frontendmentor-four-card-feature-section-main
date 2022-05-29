@@ -128,4 +128,72 @@ table {
   border-spacing: 0;
 }
 
+:root {
+  --red-100: hsl(0, 78%, 62%);
+  --cyan-100: hsl(180, 62%, 55%);
+  --orange-100: hsl(34, 97%, 64%);
+  --blue-100: hsl(229, 6%, 66%);
+  --blue-200: hsl(212, 86%, 64%);
+  --blue-300: hsl(234, 12%, 34%);
+  --gray-100: hsl(0, 0%, 98%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--gray-100);
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--blue-300);
+  }
+
+  p {
+    color: var(--blue-100);
+  }
+}
+.container {
+  margin-inline: auto;
+}
+.container--85 {
+  width: 85%;
+}
+
+.header {
+  text-align: center;
+  margin: 5rem 0;
+}
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+.header h2 {
+  font-size: 1.5rem;
+  margin: 0.75rem 0 1.25rem;
+}
+.header p {
+  line-height: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */

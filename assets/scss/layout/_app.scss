@@ -1,0 +1,59 @@
+:root {
+  --red-100: hsl(0, 78%, 62%);
+  --cyan-100: hsl(180, 62%, 55%);
+  --orange-100: hsl(34, 97%, 64%);
+  --blue-100: hsl(229, 6%, 66%);
+  --blue-200: hsl(212, 86%, 64%);
+  --blue-300: hsl(234, 12%, 34%);
+  --gray-100: hsl(0, 0%, 98%);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  font-weight: 600;
+}
+
+p {
+  font-weight: 400;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--gray-100);
+  }
+
+  :where(h1, h2, h3, h4, h5, h6) {
+    color: var(--blue-300);
+  }
+
+  p {
+    color: var(--blue-100);
+  }
+}
+
+// @media (prefers-color-scheme: dark) {
+//   body {
+//     background-color: #121212;
+//   }
+
+//   :where(h1, h2, h3, h4, h5, h6) {
+//     color: #f2f2f2;
+//   }
+
+//   p {
+//     color: var(--blue-100);
+//   }
+// }
