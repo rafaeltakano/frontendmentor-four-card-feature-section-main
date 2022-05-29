@@ -1,0 +1,29 @@
+.card {
+  background-color: var(--light-100);
+  border: 5px solid transparent;
+  border-radius: 0.5rem;
+  border-top-color: var(--blue-300);
+  padding: 1.5rem;
+
+  &__title {
+    h3 {
+      font-size: 1.25rem;
+    }
+  }
+
+  &__text {
+    margin: 1rem 0 2.5rem;
+
+    p {
+      font-size: 0.9375rem;
+    }
+  }
+
+  &__img {
+    text-align: right;
+  }
+
+  &--cyan {
+    border-top-color: var(--cyan-100);
+  }
+}
